@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.maethorin.lanmusicplayer" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>LAN Music Player</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <platform name="android">
+        <icon src="res/android/mdpi/ic_launcher.png" density="mdpi"/>
+        <icon src="res/android/hdpi/ic_launcher.png" density="hdpi"/>
+        <icon src="res/android/xhdpi/ic_launcher.png" density="xhdpi"/>
+        <icon src="res/android/xxhdpi/ic_launcher.png" density="xxhdpi"/>
+        <icon src="res/android/xxxhdpi/ic_launcher.png" density="xxxhdpi"/>
+    </platform>
+</widget>

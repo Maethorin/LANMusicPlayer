@@ -1,0 +1,8 @@
+{
+    "lib": {
+        "www": {
+            "id": "com.methorin.lanmusicplayer",
+            "version": "0.0.1"
+        }
+    }
+}
