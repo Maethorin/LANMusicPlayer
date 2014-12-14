@@ -34,7 +34,19 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-            serioulsy!!
+            <h2>Example HTML5 Audio Streamer app</h2>
+            <div id="playcontrols">
+                <a href="#" id="playbutton" onClick="html5audio.play();return false;"><img src="file:///android_res/drawable/ic_button_play.png" /></a>
+                <a href="#" id="activityindicator" onClick="html5audio.stop();return false;"><img src="file:///android_res/drawable/ic_button_stop.png" /></a>
+                <a href="#" id="stopbutton" onClick="html5audio.stop();return false;"><img src="file:///android_res/drawable/ic_button_stop.png" /></a>
+            </div>
+            <div id="textpositiondiv">Time played: <span id="textposition">stopped</span></div>
+            <script type="text/javascript">
+                playButton = document.getElementById('playbutton');
+                stopButton = document.getElementById('stopbutton');
+                activityIndicator = document.getElementById('activityindicator');
+                textPosition = document.getElementById('textposition');
+            </script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

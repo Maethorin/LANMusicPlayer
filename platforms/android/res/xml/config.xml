@@ -24,4 +24,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="KeepRunning" value="false" />
 </widget>

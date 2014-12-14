@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="KeepRunning" value="false"/>
     <platform name="android">
         <icon src="res/android/drawable-mdpi/ic_launcher.png" density="mdpi"/>
         <icon src="res/android/drawable-hdpi/ic_launcher.png" density="hdpi"/>
