@@ -1,2 +1,2 @@
-/home/marcio/projects/lan-music-player/platforms/android/ant-build/AndroidManifest.xml : \
-/home/marcio/projects/lan-music-player/platforms/android/AndroidManifest.xml \
+/home/maethorin/projects/LANMusicPlayer/platforms/android/ant-build/AndroidManifest.xml : \
+/home/maethorin/projects/LANMusicPlayer/platforms/android/AndroidManifest.xml \
