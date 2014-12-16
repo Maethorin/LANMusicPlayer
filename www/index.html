@@ -25,7 +25,7 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>LAN Music Player</title>
     </head>
     <body>
         <div class="app">
@@ -36,17 +36,10 @@
             </div>
             <h2>Example HTML5 Audio Streamer app</h2>
             <div id="playcontrols">
-                <a href="#" id="playbutton" onClick="html5audio.play();return false;"><img src="file:///android_res/drawable/ic_button_play.png" /></a>
-                <a href="#" id="activityindicator" onClick="html5audio.stop();return false;"><img src="file:///android_res/drawable/ic_button_stop.png" /></a>
-                <a href="#" id="stopbutton" onClick="html5audio.stop();return false;"><img src="file:///android_res/drawable/ic_button_stop.png" /></a>
+                <button id="playbutton" data-mode="play" onClick="app.buttonPlayPressed();return false;"><img src="file:///android_res/drawable/ic_button_play.png" /></button>
+                <button id="stopbutton" onClick="app.stop();return false;"><img src="file:///android_res/drawable/ic_button_stop.png" /></button>
             </div>
             <div id="textpositiondiv">Time played: <span id="textposition">stopped</span></div>
-            <script type="text/javascript">
-                playButton = document.getElementById('playbutton');
-                stopButton = document.getElementById('stopbutton');
-                activityIndicator = document.getElementById('activityindicator');
-                textPosition = document.getElementById('textposition');
-            </script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
