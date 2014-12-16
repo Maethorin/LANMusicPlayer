@@ -15,7 +15,7 @@ var app = {
         this.player = new Audio(this.audioURL);
     },
     setVariables: function() {
-        this.resetPlayer('http://stream.4zzzfm.org.au:789/;');
+        this.resetPlayer('http://10.1.12.185/my-way.mp3');
         this.isPlaying = false;
         this.readyStateInterval = null;
         this.playButton = document.getElementById('playbutton');
@@ -92,7 +92,7 @@ var app = {
         clearInterval(this.readyStateInterval);
         this.player.pause();
         this.textPosition.innerHTML = '';
-        this.resetPlayer('http://stream.4zzzfm.org.au:789/;');
+        this.resetPlayer('http://10.1.12.185/my-way.mp3');
     },
     changeState: function(state) {
         this.isPlaying = state == 'play';
