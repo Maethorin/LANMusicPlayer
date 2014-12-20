@@ -17,31 +17,61 @@
     specific language governing permissions and limitations
     under the License.
 -->
+
+<!-- http://themeroller.jquerymobile.com/?ver=1.4.5&style_id=20141219-47 -->
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
+
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <link rel="stylesheet" href="css/temas/lanplayer.min.css" />
+    	<link rel="stylesheet" href="css/temas/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
         <title>LAN Music Player</title>
+
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.mobile.config.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+
+        <script type="text/javascript" src="js/appFile.js"></script>
+        <script type="text/javascript" src="js/application.js"></script>
+        <script type="text/javascript" src="js/utility.js"></script>
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript">
+             $(document).on('pagebeforecreate orientationchange', Application.updateIcons);
+             $(document).one('deviceready', Application.initApplication);
+        </script>
     </head>
     <body>
-        <div class="app">
-            <h1>Lan Music Player</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div id="home-page" data-role="page">
+            <div data-role="header">
+                <h1>Audero Audio Player</h1>
             </div>
-            <h2>Example HTML5 Audio Streamer app</h2>
-            <div id="playcontrols">
-                <button id="playbutton" data-mode="play" onClick="app.buttonPlayPressed();return false;"><img src="file:///android_res/drawable/ic_button_play.png" /></button>
-                <button id="stopbutton" onClick="app.stop();return false;"><img src="file:///android_res/drawable/ic_button_stop.png" /></button>
+            <div data-role="content">
+                <p id="app-description">
+                    Audero Audio Player is a basic audio player that searches the file system of a device, collects the audio files found and then allows the user to listen them. This app also
+                    enables the user to update the list at any time to include files that might have been downloaded after
+                    running the operation for the first time. You can also remove any unwanted audio - for example, sounds used as notifications in other applications - by clicking an icon on the right side of the song name. The sound list is ordered alphabetically with letter
+                    dividers to organize and group list items, and it has a search box to filter files.
+                    You can see the described page by looking at the screenshot below.
+                </p>
+                <a href="files-list.html" data-role="button">File List</a>
             </div>
-            <div id="textpositiondiv">Time played: <span id="textposition">stopped</span></div>
+            <div data-role="footer" class="ui-bar">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><strong>Criado por Maethorin Soft</strong></div>
+                    <div class="ui-block-b"><a id="credits-button" href="creditos.html" data-icon="info" data-iconpos="notext" data-role="button">Créditos</a></div>
+                </div>
+            </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
